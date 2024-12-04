@@ -23,6 +23,8 @@ function nuke() {
 $inspect(todoList);
 
 </script>
+
+
 <form onsubmit={addItem}>
 <input type="text" bind:value={todoItem}>
 <button type="submit">Add</button>
@@ -38,8 +40,10 @@ $inspect(todoList);
      {/each}
 </ul>
 {#if (todoList.length > 0)}
-     <button type="button" onclick={nuke}>Nuclear Option</button>
+     <button type="button" onclick={nuke}>Clear</button>
      {/if}
+
+
 <style>
      ul {
           list-style: none;
@@ -48,8 +52,40 @@ $inspect(todoList);
           color: rgb(255, 0, 0);
           text-decoration: line-through;
      }
-     li button{
+     form {
+          display: flex;
+     }
+     input[type="text"] {
+          border-top-left-radius: 50px;
+          border-bottom-left-radius: 50px;
+          padding: 0.6em 1rem;
+          font-size: 1.2rem;
+          border-right: none;
+          display: inline-block;
+     }
+     form button {
+          border-top-right-radius: 50px;
+          border-bottom-right-radius: 50px;
+          border-top-left-radius: 50px;
+          border-bottom-left-radius: 50px;
+          margin-left: -1.5rem;
+          padding: 0.6em 1rem;
+          font-size: 1.2rem;
+          background-color: #6EC251;
+          cursor: pointer;
+          &:hover {
+               background-color: #4D8839;
+          }
+     }
+     button {
+          background-color: #6EC251;
+     }
+     ul {
+          list-style: none;
+          padding: 0;
+     }
+     li button {
+          background-color: transparent;
           background-color: firebrick;
      }
-
 </style>

@@ -49,7 +49,7 @@ $inspect(todoList);
           list-style: none;
      }
      span.done {
-          color: rgb(255, 0, 0);
+          color: rgb(245, 11, 11);
           text-decoration: line-through;
      }
      form {

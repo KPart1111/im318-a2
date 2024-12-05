@@ -24,7 +24,6 @@ $inspect(todoList);
 
 </script>
 
-
 <form onsubmit={addItem}>
 <input type="text" bind:value={todoItem}>
 <button type="submit">Add</button>
@@ -40,7 +39,7 @@ $inspect(todoList);
      {/each}
 </ul>
 {#if (todoList.length > 0)}
-     <button type="button" onclick={nuke}>Clear</button>
+     <button type="button" class="clear" onclick={nuke}>Clear</button>
      {/if}
 
 
@@ -49,7 +48,7 @@ $inspect(todoList);
           list-style: none;
      }
      span.done {
-          color: #365f29;
+          color: #4d8839;
           text-decoration: line-through;
      }
      form {
@@ -58,7 +57,8 @@ $inspect(todoList);
      input[type="text"] {
           border-top-left-radius: 50px;
           border-bottom-left-radius: 50px;
-          padding: 0.6em 0rem;
+          padding: 0.6em 1rem;
+          padding-right: 0;
           font-size: 1.2rem;
           font-family: "Solway", serif;
           border-right: none;
@@ -72,24 +72,30 @@ $inspect(todoList);
           margin-left: -1.5rem;
           padding: 0.6em 1rem;
           font-size: 1.2rem;
-          background-color: #6EC251;
+          background-color: #9de285;
           cursor: pointer;
           &:hover {
-               background-color: #365f29;
+               background-color: #4d8839;
           }
      }
      button {
           background-color: rgb(210, 82, 82);
           font-family: "Solway", serif;
           border-radius: 50px;
-          font-size: 1.5rem;
+          font-size: 1.2rem;
      }
      ul {
           list-style: none;
           padding: 0;
      }
      li button {
-          background-color: transparent;
           background-color: rgb(210, 82, 82);
      }
+     .clear {
+          padding: 0.6em 1rem;
+     }
+     input[type="checkbox" i] {
+     accent-color: #4d8839;
+     border-radius: 50px;
+}
 </style>

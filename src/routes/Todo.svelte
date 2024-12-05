@@ -83,6 +83,9 @@ $inspect(todoList);
           font-family: "Solway", serif;
           border-radius: 50px;
           font-size: 1.2rem;
+          &:hover {
+               background-color: #4d8839;
+          }
      }
      ul {
           list-style: none;

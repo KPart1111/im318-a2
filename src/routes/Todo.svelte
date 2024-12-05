@@ -35,7 +35,7 @@ $inspect(todoList);
           <li>
                <input type="checkbox" bind:checked={item.done}>
                <span class:done={item.done}>{item.text}</span>
-               <button type="button" onclick={()=> removeItem(index)}>x</button>
+               <button type="button" onclick={()=> removeItem(index)}>X</button>
           </li>
      {/each}
 </ul>
@@ -49,7 +49,7 @@ $inspect(todoList);
           list-style: none;
      }
      span.done {
-          color: rgb(245, 11, 11);
+          color: #365f29;
           text-decoration: line-through;
      }
      form {
@@ -58,8 +58,9 @@ $inspect(todoList);
      input[type="text"] {
           border-top-left-radius: 50px;
           border-bottom-left-radius: 50px;
-          padding: 0.6em 1rem;
+          padding: 0.6em 0rem;
           font-size: 1.2rem;
+          font-family: "Solway", serif;
           border-right: none;
           display: inline-block;
      }
@@ -74,11 +75,14 @@ $inspect(todoList);
           background-color: #6EC251;
           cursor: pointer;
           &:hover {
-               background-color: #4D8839;
+               background-color: #365f29;
           }
      }
      button {
-          background-color: #6EC251;
+          background-color: rgb(210, 82, 82);
+          font-family: "Solway", serif;
+          border-radius: 50px;
+          font-size: 1.5rem;
      }
      ul {
           list-style: none;
@@ -86,6 +90,6 @@ $inspect(todoList);
      }
      li button {
           background-color: transparent;
-          background-color: firebrick;
+          background-color: rgb(210, 82, 82);
      }
 </style>

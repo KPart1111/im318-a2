@@ -1,10 +1,25 @@
 body {
-     font-family: "Poppins", sans-serif;
+     font-family: "Solway", serif;
      margin: 0;
-     padding: 5vw;
      background-color: #F8F1AB;
+     font-size: 1.5rem;
 }
 .wrapper {
      max-width: 600px;
      margin: 0 auto;
+     padding: 13.5vw;
+}
+h1 {
+     font-family: "Solway", serif;
+     font-weight: 800;   
+     margin: 0;
+}
+.header {
+     background-color: #caf8ab;
+     text-align: center;
+     padding: 5vw;
+}
+input[type="checkbox" i] {
+     accent-color: #4d8839;
+     border-radius: 50px;
 }

@@ -84,7 +84,7 @@ $inspect(todoList);
           border-radius: 50px;
           font-size: 1.2rem;
           &:hover {
-               background-color: #4d8839;
+               background-color: rgb(163, 31, 31);
           }
      }
      ul {
